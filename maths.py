@@ -1,5 +1,5 @@
 import math
-
+import trigonometry
 
 def circle_algorithm():
     circle = input("Do you need to work out circumference, or radius?(c/r): ")
@@ -41,12 +41,13 @@ def quad():
         print("The area of your trapezium is ", ((side2 + side1)/2) * height)
 
 
-math_type = input("Do you need to work out a quadrilateral, circle, the sum of angles or a triangle?(q/c/s/t): ")
-if math_type == "c":
-    circle_algorithm()
-elif math_type == "t":
-    triangle_algorithm()
-elif math_type == "s":
-    sum_of_sides()
-elif math_type == "q":
-    quad()
+def run_maths():
+    math_type = input("Do you need to work out a quadrilateral, circle, the sum of angles or a triangle?(q/c/s/t): ")
+    if math_type == "c":
+        circle_algorithm()
+    elif math_type == "t":
+        triangle_algorithm()
+    elif math_type == "s":
+        sum_of_sides()
+    elif math_type == "q":
+        quad()
