@@ -1,6 +1,7 @@
 import math
 import trigonometry
 
+
 def circle_algorithm():
     circle = input("Do you need to work out circumference, or radius?(c/r): ")
     if circle == "r":
@@ -41,8 +42,14 @@ def quad():
         print("The area of your trapezium is ", ((side2 + side1)/2) * height)
 
 
+def standard_form():
+    formalise = float(input("Enter the number to be converted into standard form: "))
+    return print("%.4e" % formalise)
+
+
 def run_maths():
-    math_type = input("Do you need to work out a quadrilateral, circle, the sum of angles or a triangle?(q/c/s/t): ")
+    math_type = input("Do you need to work out a standard form, quadrilateral, circle, the sum of angles or a triangle?"
+                      "(sf,q/c/s/t): ")
     if math_type == "c":
         circle_algorithm()
     elif math_type == "t":
@@ -51,3 +58,5 @@ def run_maths():
         sum_of_sides()
     elif math_type == "q":
         quad()
+    elif math_type == "sf":
+        standard_form()
