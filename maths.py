@@ -1,7 +1,12 @@
+"""
+This is a class which is able to work out some simple mathematical functions at a GCSE level.
+"""
+
 import math
 import trigonometry
 
 
+# This function works out either the radius or circumference of a circle
 def circle_algorithm():
     circle = input("Do you need to work out circumference, or radius?(c/r): ")
     if circle == "r":
@@ -14,12 +19,14 @@ def circle_algorithm():
         print("The circumference of your circle is: ", circumference)
 
 
+# This function works out the area of a triangle
 def triangle_algorithm():
     base = float(input("Enter the base of your triangle: "))
     height = float(input("Enter the height of your triangle: "))
     print("The area of your triangle is ", (base * height) / 2)
 
 
+# This function works out the number of degrees in a shape with as many sides as the user inputs.
 def sum_of_sides():
     sides = int(input("How many sides does your shape have?: "))
     total = (sides - 2) * 180
@@ -28,6 +35,7 @@ def sum_of_sides():
     print("And the exterior angle of each side is: ", 360 / sides, "Degrees")
 
 
+# Works out the area of a quadrilateral.
 def quad():
     quad_type = input("Is your shape a square, rectangle or trapezium?(s/r/t): ")
     side1 = float(input("Enter a side length: "))
@@ -42,11 +50,13 @@ def quad():
         print("The area of your trapezium is ", ((side2 + side1)/2) * height)
 
 
+# Converts numbers to standard form
 def standard_form():
     formalise = float(input("Enter the number to be converted into standard form: "))
     return print("%.4e" % formalise)
 
 
+# Runs a function to determine which calculation is needed.
 def run_maths():
     math_type = input("Do you need to work out a standard form, quadrilateral, circle, the sum of angles or a triangle?"
                       "(sf,q/c/s/t): ")
