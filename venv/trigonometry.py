@@ -20,6 +20,7 @@ print("b is a right angle.")
 # Let the user calculate pythagoras or trigenometry
 trig_or_pythagoras = input("Do you want to do trigonomety, pythagoras or something more simple?(t/p/other): " )
 
+
 # The function for calculating pythagoras
 def pythagoras():
     which = input("Which side do you want to find out?(A/B/C): ")
@@ -36,7 +37,8 @@ def pythagoras():
         C = math.pow(float(input("Please enter the value of side C: ")), 2)
         print("The size of side A (Opposite) is: ", math.sqrt(math.sqrt(C) - math.sqrt(B)))
 
-# The function for working out trigenometry
+
+# The function for working out trigonometry
 def trig():
 
     # Allow the user to calculate a side or an angle
@@ -88,6 +90,7 @@ def trig():
             C = float(input("Input the length of C "))
             sin = math.degrees(math.asin(A / C))
             print("The size of the angle a is: ", sin)
+
 
 # Runs the different functions
 if trig_or_pythagoras == "p":

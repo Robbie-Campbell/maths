@@ -3,7 +3,6 @@ This is a class which is able to work out some simple mathematical functions at 
 """
 
 import math
-import trigonometry
 
 
 # This function works out either the radius or circumference of a circle
